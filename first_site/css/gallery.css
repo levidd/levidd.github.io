@@ -1,0 +1,13 @@
+img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 20%;
+  border: solid whitesmoke;
+  width: 75%;
+}
+
+nav {
+  position: sticky;
+  display: inline;
+  top: 0px;
+}

@@ -1,0 +1,64 @@
+/*
+html is used for constants
+*/
+html {
+  --hover-color: steelblue;
+  --background-color: dodgerblue;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.main-image {
+  border-radius: 50%;
+  border: solid whitesmoke;
+  margin: 10px;
+}
+
+.link-image:hover {
+  background-color: var(--hover-color);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.background_section {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+#name {
+  text-align: center;
+  font-style: italic;
+  color: white;
+}
+
+button {
+  background-color: #0077ea;
+  color: whitesmoke;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+a {
+  color: black;
+}
+
+#info-area {
+  margin: 50px;
+  padding-right: 5%;
+}
+
+#info-row {
+}

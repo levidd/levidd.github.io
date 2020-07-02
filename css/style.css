@@ -11,12 +11,6 @@ body {
   background-color: var(--background-color);
 }
 
-.main-image {
-  border-radius: 50%;
-  border: solid whitesmoke;
-  margin: 10px;
-}
-
 .link-image:hover {
   background-color: var(--hover-color);
 }
@@ -42,6 +36,10 @@ nav {
   text-align: center;
   font-style: italic;
   color: white;
+  margin: 30px;
+  animation: lightSpeedInLeft;
+  animation-duration: 1.5s;
+  animation-delay: 0.25s;
 }
 
 button {
@@ -133,6 +131,10 @@ a {
   top: 20px;
 }
 
+#menu-icon:hover {
+  cursor: pointer;
+}
+
 .academic-item-container {
   margin: 20px;
 }
@@ -141,4 +143,21 @@ a {
   padding: 10px;
   max-width: 75%;
   max-height: 100px;
+}
+
+#intro-img {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro-img img {
+  border-radius: 50%;
+  border: solid whitesmoke;
+  margin: 10px;
+  animation: fadeInUp;
+  animation-duration: 2s;
+  animation-delay: 0.25s;
 }

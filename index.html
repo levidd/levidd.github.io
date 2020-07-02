@@ -99,7 +99,7 @@
             want my furniture to be laid out. If you want to learn more about
             this topic,
             <a
-              href="https://en.wikipedia.org/wiki/Aphantasia#:~:text=Aphantasia%20is%20a%20mental%20condition,the%20inability%20to%20recognize%20faces."
+              href="https://www.scientificamerican.com/article/when-the-minds-eye-is-blind1/"
               >follow this link to go there.</a
             >
           </p>
@@ -307,7 +307,7 @@
     <!-- custom scripts -->
     <script>
       function openNav() {
-        var shift = "20%";
+        var shift = getNavSize();
         document.getElementById("my-sidenav").style.width = shift;
         document.getElementById("main").style.marginLeft = shift;
         document.body.style.backgroundColor = "rgba(30, 144, 255,0.8)";
@@ -318,6 +318,15 @@
         document.getElementById("my-sidenav").style.width = shift;
         document.getElementById("main").style.marginLeft = shift;
         document.body.style.backgroundColor = "rgb(30, 144, 255)";
+      }
+
+      function getNavSize() {
+        var thisWidth = screen.width;
+        if (thisWidth < 400) {
+          return "10%";
+        } else {
+          return "15%";
+        }
       }
     </script>
   </body>

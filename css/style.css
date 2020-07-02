@@ -4,6 +4,7 @@ html is used for constants
 html {
   --hover-color: steelblue;
   --background-color: dodgerblue;
+  --sidenav-transition-time: 0.5s;
 }
 
 body {
@@ -58,7 +59,91 @@ a {
 #info-area {
   margin: 50px;
   padding-right: 5%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#info-row {
+.column-container-half {
+  width: 45%;
+  margin: 50px 2.5%;
+}
+
+.column-container-full {
+  width: 90%;
+  margin: 50px 5%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: var(--sidenav-transition-time);
+}
+
+.sidenav a {
+  position: relative;
+  top: 10px;
+  padding-top: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  color: #818181;
+  display: block;
+  transition: var(--sidenav-transition-time);
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  transition: var(--sidenav-transition-time);
+}
+
+#main {
+  transition: margin-left var(--sidenav-transition-time);
+  padding: 20px;
+  font-size: calc(8px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400) {
+  .sidenav {
+  }
+}
+
+#menu-icon {
+  position: fixed;
+  left: 10px;
+  top: 20px;
+}
+
+.academic-item-container {
+  margin: 20px;
+}
+
+.academic-item-container img {
+  padding: 10px;
+  max-width: 75%;
+  max-height: 100px;
 }

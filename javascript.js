@@ -9,7 +9,7 @@ const placeholder_image =
 
 // add listener to submit event
 document
-  .querySelector("#destination_form")
+  .getElementById("destination_form")
   .addEventListener("submit", addNewDestinationCard);
 
 // function to do when submit has happened

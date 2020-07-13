@@ -1,0 +1,9 @@
+#title {
+  text-align: center;
+}
+
+#cardshow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

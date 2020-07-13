@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Title portion -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Vaction Destinations WhishList</h1>
+        <p>
+          Found exciting places to visit on your next vaction? Use the form
+          below to add them to your whishlist.
+        </p>
+      </div>
+    </div>
+    <!-- form and card portion -->
+    <div id="lower-portion" class="container">
+      <div class="row">
+        <div class="col-3">
+          <form id="destination_form">
+            <div class="form-group">
+              <label for="destination_name">Destination Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter destination name"
+                id="destination_name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Where is it located?"
+                name="location"
+                id="location"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="photo_url">Photo</label>
+              <input
+                type="url"
+                name="photo_url"
+                class="form-control"
+                placeholder="Enter image URL"
+                id="photo_url"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea
+                type="text"
+                name="description"
+                cols="30"
+                rows="3"
+                placeholder="Where is it located?"
+                id="description"
+              ></textarea>
+            </div>
+            <button id="submit-button" type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="col-9">
+          <h3 id="title">Destination Details</h3>
+          <div id="cards_show"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom js -->
+    <script src="javascript.js"></script>
+  </body>
+</html>

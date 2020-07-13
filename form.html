@@ -18,12 +18,12 @@
   </head>
   <body>
     <!-- Title portion -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Vaction Destinations WhishList</h1>
-        <p>
-          Found exciting places to visit on your next vaction? Use the form
-          below to add them to your whishlist.
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container text-center">
+        <h1 class="display-4">Vacation Destinations WhishList</h1>
+        <p class="lead">
+          Found exciting places to visit on your next vacation? Use the form
+          below to add them to your wishlist.
         </p>
       </div>
     </div>
@@ -33,7 +33,7 @@
         <div class="col-3">
           <form id="destination_form">
             <div class="form-group">
-              <label for="destination_name">Destination Name</label>
+              <label for="destination_name">Destination name</label>
               <input
                 type="text"
                 class="form-control"
@@ -61,7 +61,6 @@
                 class="form-control"
                 placeholder="Enter image URL"
                 id="photo_url"
-                required
               />
             </div>
             <div class="form-group">
@@ -69,19 +68,22 @@
               <textarea
                 type="text"
                 name="description"
-                cols="30"
-                rows="3"
                 placeholder="Where is it located?"
                 id="description"
+                class="form-control"
               ></textarea>
             </div>
-            <button id="submit-button" type="submit" class="btn btn-primary">
-              Submit
+            <button
+              id="submit-button"
+              type="submit"
+              class="btn btn-primary submit-button"
+            >
+              Add to list
             </button>
           </form>
         </div>
-        <div class="col-9">
-          <h3 id="title">Destination Details</h3>
+        <div id="destination-cards" class="col-9">
+          <h3 id="title">Enter destination details</h3>
           <div id="cards_show"></div>
         </div>
       </div>
